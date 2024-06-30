@@ -25,15 +25,23 @@
             font-size: 14.88px;
             width: 80%;
         }
-        button{
+
+        button {
             width: fit-content;
             border: 0;
             background-color: transparent;
             font-size: 14.75px;
             font-weight: 700;
-            i{
+
+            i {
                 margin-left: 10px;
                 color: var(--main-color);
+                transition: .4s;
+                cursor: pointer;
+
+                &:hover {
+                    opacity: .4;
+                }
             }
         }
     }
