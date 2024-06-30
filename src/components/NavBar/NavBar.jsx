@@ -3,7 +3,7 @@ import './NavBar.css'
 // import logo from '../../assets/Yasser_Imane.jpg'
 export default function NavBar() {
     return (
-        <div className="navBar">
+        <nav className="navBar">
             <div className="nav-left">
                 <div className="logo">
                     <Link to='/'>Logo</Link>
@@ -16,6 +16,7 @@ export default function NavBar() {
                     <Link>Partenariat</Link>
                 </div>
             </div>
+
             <div className="nav-right">
                 <div className="links">
                     <Link>Média</Link>
@@ -27,12 +28,13 @@ export default function NavBar() {
                     <div>
                         <i className="fa-solid fa-magnifying-glass"></i>
                     </div>
+                    
                     <div>
                         <i className="fa-solid fa-globe"></i>
                         <span>Global</span>
                     </div>
                 </div>
             </div>
-        </div>
+        </nav>
     )
 }
