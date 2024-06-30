@@ -1,0 +1,49 @@
+.sectionOne {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+
+    /* margin: 40px; */
+    .text {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        h2 {
+            font-weight: 700;
+            font-size: 33.47px;
+            line-height: 54px;
+            color: var(--main-color);
+            color: black;
+            width: 60%;
+        }
+
+        p {
+            line-height: 24px;
+            font-size: 14.88px;
+            width: 80%;
+        }
+        button{
+            width: fit-content;
+            border: 0;
+            background-color: transparent;
+            font-size: 14.75px;
+            font-weight: 700;
+            i{
+                margin-left: 10px;
+                color: var(--main-color);
+            }
+        }
+    }
+
+    .img {
+        width: 50%;
+
+        img {
+            width: 100%;
+            border-radius: 8px;
+        }
+    }
+}
