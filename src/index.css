@@ -16,5 +16,54 @@
 
 body {
     background-color: #f8f4f4;
+    overflow-x: hidden;
 
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 6px;
+        background: linear-gradient(transparent, var(--main-color));
+    }
+}
+
+.avant-responsive {
+    position: fixed;
+    top: 0;
+    background-color: #C4DCF4;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    z-index: -100000;
+    display: none;
+
+    img {
+        width: 250px;
+        mix-blend-mode: multiply;
+        user-select: none;
+    }
+
+    p {
+        font-size: 12px;
+        letter-spacing: 1px;
+        user-select: none;
+        text-align: center;
+    }
+}
+
+@media(max-width: 320px) {
+    body {
+        overflow: hidden;
+    }
+
+    .avant-responsive {
+        display: flex;
+        opacity: 1;
+        z-index: 9999;
+    }
 }

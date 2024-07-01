@@ -6,6 +6,13 @@
     justify-content: space-between;
     padding: 0 30px;
 
+    .sideBtn {
+        display: none;
+        color: var(--main-color);
+        font-size: 20px;
+        cursor: pointer;
+    }
+
     .nav-left {
         display: flex;
         align-items: center;
@@ -77,18 +84,56 @@
             i {
                 font-size: 20px;
                 color: var(--main-color);
+                cursor: pointer;
             }
 
-            div {
-                &:last-child {
-                    display: flex;
-                    align-items: center;
-                    gap: 10px;
 
-                    span {
-                        font-weight: bold;
-                    }
+            .lang {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                span {
+                    font-weight: bold;
                 }
+            }
+
+        }
+    }
+}
+
+@media (max-width: 1405px) {
+    .navBar {
+        .links {
+            a {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1260px) {
+    .navBar {
+        justify-content: space-between;
+
+        .sideBtn {
+            display: flex;
+        }
+
+        .links {
+            display: none;
+        }
+
+        .nav-left {
+            width: fit-content;
+        }
+
+        .nav-right {
+            width: fit-content;
+
+            .lang {
+                background-color: red;
+                display: none !important;
             }
         }
     }

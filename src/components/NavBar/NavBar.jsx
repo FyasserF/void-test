@@ -1,13 +1,18 @@
 import { Link } from "react-router-dom";
 import './NavBar.css'
-// import logo from '../../assets/Yasser_Imane.jpg'
+
+
 export default function NavBar() {
     return (
         <nav className="navBar">
+
+            <div className="sideBtn">
+                <i className="fa-solid fa-bars"></i>
+            </div>
+
             <div className="nav-left">
                 <div className="logo">
                     <Link to='/'>Logo</Link>
-                    {/* <img src={logo} alt="" width={80} /> */}
                 </div>
                 <div className="links">
                     <Link>Notre Entreprise</Link>
@@ -28,13 +33,14 @@ export default function NavBar() {
                     <div>
                         <i className="fa-solid fa-magnifying-glass"></i>
                     </div>
-                    
-                    <div>
+
+                    <div className="lang">
                         <i className="fa-solid fa-globe"></i>
                         <span>Global</span>
                     </div>
                 </div>
             </div>
+            
         </nav>
     )
 }
