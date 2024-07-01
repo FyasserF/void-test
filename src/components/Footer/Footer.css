@@ -36,11 +36,14 @@
             }
 
             .hautPage {
-                a {
+                button {
+                    background-color: transparent;
                     text-decoration: none;
                     color: white;
                     font-size: 13px;
                     font-weight: 400;
+                    border: 0;
+                    cursor: pointer;
 
                     i {
                         margin-left: 15px;

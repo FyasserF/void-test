@@ -5,6 +5,14 @@ export default function Footer() {
     const links = [
         'Contact', 'Mentions légales', 'Vie Privée et Données Personnelles', 'Politique des cookies', 'Entreprise Today', 'Nos publications', 'Plan du site', 'Annuaire', 'Accessibilité : conformité partielle', 'Code de Conduite'
     ]
+
+    const handleGoUp = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+
     return (
         <div className="Footer">
             <div className="top">
@@ -24,7 +32,7 @@ export default function Footer() {
 
                     </div>
                     <div className="hautPage">
-                        <a href='#'>Haut de la page <i className="fa-solid fa-arrow-up"></i></a>
+                        <button onClick={handleGoUp}>Haut de la page <i className="fa-solid fa-arrow-up"></i></button>
                     </div>
                 </div>
             </div>

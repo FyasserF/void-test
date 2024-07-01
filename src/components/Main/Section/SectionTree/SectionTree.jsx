@@ -2,6 +2,7 @@ import './SectionTree.css'
 import img1 from '../../../../assets/sectionTree/sectionTree-img1.png'
 import img2 from '../../../../assets/sectionTree/sectionTree-img2.png'
 import img3 from '../../../../assets/sectionTree/sectionTree-img3.png'
+import { useEffect, useState } from 'react'
 
 export default function SectionTree() {
     const data = [
@@ -30,6 +31,34 @@ export default function SectionTree() {
             title: "Cancer et travail : Agir ensemble"
         },
     ]
+    const [cardIndex, setcardIndex] = useState(1)
+
+    const handleNext = () => {
+        cardIndex == 3 ? '' : setcardIndex(cardIndex + 1)
+    }
+
+    const handlePrevious = () => {
+        cardIndex == 1 ? '' : setcardIndex(cardIndex - 1)
+    }
+
+    console.log(cardIndex)
+
+    const handleResize = () => {
+        if (window.innerWidth >= 700) {
+            setcardIndex(1);
+        }
+    };
+
+    useEffect(() => {
+        handleResize();
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
     return (
         <div className="SectionTree">
             <div className="title">
@@ -43,7 +72,7 @@ export default function SectionTree() {
 
             <div className="cards">
                 {data.map(({ img, info, title }, index) => (
-                    <div className="card">
+                    <div key={index} className={cardIndex === 1 ? 'card firstOne' : cardIndex === 2 ? 'card secendOne' : 'card thirdOne'}>
                         <div className="img">
                             <img src={img} alt="" />
                         </div>
@@ -56,6 +85,14 @@ export default function SectionTree() {
                         <button>Lire l'article  <i className="fa-solid fa-arrow-right"></i></button>
                     </div>
                 ))}
+            </div>
+
+            <div className="btns">
+                <span>{cardIndex}/3</span>
+                <div>
+                    <button onClick={handlePrevious} disabled={cardIndex == 1}><i className="fa-solid fa-arrow-left"></i></button>
+                    <button onClick={handleNext} disabled={cardIndex == 3}><i className="fa-solid fa-arrow-right"></i></button>
+                </div>
             </div>
 
 

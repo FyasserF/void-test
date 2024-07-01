@@ -11,6 +11,7 @@
         }
 
         h4 {
+            padding-right: 10px;
             font-size: 22.13px;
             font-weight: 700;
 
@@ -36,13 +37,16 @@
             border: 1px solid gray;
             border-radius: 8px;
             overflow: hidden;
+            transition: .2s ease-in-out;
 
             .img {
                 height: 240px;
                 overflow: hidden;
 
                 img {
+                    height: 240px;
                     width: 100%;
+                    object-fit: cover;
                 }
             }
 
@@ -92,5 +96,143 @@
             }
         }
 
+        .card.firstOne {
+            right: 0;
+            transition: .4 ease-out;
+        }
+
+        .card.secendOne {
+            right: 70%;
+            transition: .4 ease-out;
+        }
+
+        .card.thirdOne {
+            right: 150%;
+            transition: .4 ease-out;
+        }
+
+    }
+
+    .btns {
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 0 10px;
+
+        span {
+            font-size: 20px;
+        }
+
+        div {
+            display: flex;
+            gap: 30px;
+
+            button {
+                background-color: transparent;
+                border: 0;
+                cursor: pointer;
+                transition: .4s;
+
+                i {
+                    height: 40px;
+                    width: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 2px solid var(--main-color);
+                    border-radius: 50%;
+                    color: var(--main-color);
+                }
+
+                &:hover {
+                    opacity: .5;
+                }
+
+                &:disabled {
+                    cursor: initial;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+
+                    i {
+                        border-color: rgb(53, 53, 53);
+                        color: rgb(53, 53, 53);
+                        opacity: .3;
+                    }
+                }
+
+
+            }
+
+
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    .SectionTree {
+
+        .card {
+            gap: 10px !important;
+
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    .SectionTree {
+        h2 {
+            font-size: 23px !important;
+        }
+
+        h4 {
+            font-size: 15px !important;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .SectionTree {
+
+        .cards {
+            overflow: hidden;
+            display: flex !important;
+
+            .card {
+                min-width: 80% !important;
+                right: 0%;
+            }
+        }
+
+        .btns {
+            display: flex;
+        }
+    }
+}
+
+@media (max-width: 515px) {
+    .SectionTree {
+        .title {
+            flex-direction: column;
+            gap: 10px;
+
+            h2 {
+                font-size: 20px !important;
+                width: 100%;
+            }
+
+            h4 {
+                width: 100%;
+                text-align: right;
+            }
+        }
+
+        .btns {
+            div {
+                gap: 10px;
+            }
+        }
     }
 }
