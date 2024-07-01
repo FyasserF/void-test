@@ -41,7 +41,6 @@ export default function SectionTree() {
         cardIndex == 1 ? '' : setcardIndex(cardIndex - 1)
     }
 
-    console.log(cardIndex)
 
     const handleResize = () => {
         if (window.innerWidth >= 700) {
