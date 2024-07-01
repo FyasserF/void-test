@@ -51,4 +51,30 @@
         }
 
     }
+
+    .buttom {
+        padding: 5px 0;
+
+        .links {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-bottom: 20px;
+            padding: 30px 30px;
+
+            a {
+                line-height: 24pxs;
+                text-decoration: none;
+                color: black;
+                font-weight: 400;
+            }
+        }
+
+        p {
+            text-align: center;
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
 }
