@@ -70,3 +70,84 @@
         }
     }
 }
+
+
+@media (max-width: 1300px) {
+    .SectionFive {
+
+
+        .cards {
+
+            h2 {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+            }
+
+            p {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 6;
+                -webkit-box-orient: vertical;
+            }
+        }
+    }
+}
+
+@media (max-width: 950px) {
+    .SectionFive {
+
+        .cards {
+
+            h2 {
+                font-size: 17px;
+            }
+
+            p {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .SectionFive {
+        .cards {
+            grid-template-columns: 1fr !important;
+            gap: 15px;
+
+            h2 {
+                font-size: 25px;
+            }
+
+            p {
+                font-size: 17px;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 450px) {
+    .SectionFive {
+        h1 {
+            font-size: 19px;
+        }
+
+        .colomn {
+            gap: 10px;
+
+            h3 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 13px;
+                -webkit-line-clamp: 3;
+            }
+        }
+    }
+}
