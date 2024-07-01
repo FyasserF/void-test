@@ -1,0 +1,73 @@
+.SectionFour {
+
+    h1 {
+        font-size: 33.89pxs;
+    }
+
+    .coloumns {
+        margin: 30px 0;
+
+        .coloumn {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 50px 20px;
+            border: 1px solid rgb(185, 185, 185);
+
+            h5 {
+                font-size: 13.23px;
+                font-weight: 700;
+            }
+
+            p {
+                width: 70%;
+                font-size: 22.31px;
+                font-weight: 700;
+                line-height: 36px;
+            }
+
+            button {
+                border: 0;
+                background-color: transparent;
+                font-size: 14.75px;
+                font-weight: 700;
+                text-align: left;
+
+                i {
+                    margin-left: 10px;
+                    color: var(--main-color);
+                    transition: .4s;
+                    cursor: pointer;
+
+                    &:hover {
+                        opacity: .4;
+                    }
+                }
+            }
+
+            .icon {
+                position: absolute;
+                right: 5%;
+                font-size: 20px;
+                color: var(--main-color);
+                padding: 10px;
+                border-radius: 50%;
+                border: 1px solid var(--main-color);
+            }
+        }
+    }
+
+    h3 {
+        padding: 0 5px 0 0;
+        margin-left: auto;
+        width: fit-content;
+        font-size: 22.31px;
+        font-weight: 700;
+
+        i {
+            margin-left: 15px;
+            color: var(--main-color);
+        }
+    }
+}
