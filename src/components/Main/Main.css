@@ -4,4 +4,7 @@
     /* height: 1000px; */
     margin: 40px auto;
     padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
 }
