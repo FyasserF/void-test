@@ -14,7 +14,7 @@ export default function Footer() {
     }
 
     return (
-        <div className="Footer">
+        <footer className="Footer">
             <div className="top">
                 <div className="logo">
                     <h2>Logo</h2>
@@ -32,7 +32,7 @@ export default function Footer() {
 
                     </div>
                     <div className="hautPage">
-                        <button onClick={handleGoUp}>Haut de la page <i className="fa-solid fa-arrow-up"></i></button>
+                        <button onClick={handleGoUp}>Haut de la page<i className="fa-solid fa-arrow-up"></i></button>
                     </div>
                 </div>
             </div>
@@ -44,6 +44,6 @@ export default function Footer() {
                 </div>
                 <p>© Entreprise 2004-2024 - Tous droits réservés</p>
             </div>
-        </div>
+        </footer>
     )
 }
