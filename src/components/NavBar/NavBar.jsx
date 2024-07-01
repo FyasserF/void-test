@@ -1,13 +1,15 @@
 import { Link } from "react-router-dom";
 import './NavBar.css'
+import { useState } from "react";
 
 
 export default function NavBar() {
+    const [isOpen, setIsOpen] = useState(false)
     return (
         <nav className="navBar">
 
             <div className="sideBtn">
-                <i className="fa-solid fa-bars"></i>
+                <i onClick={() => setIsOpen(true)} className="fa-solid fa-bars"></i>
             </div>
 
             <div className="nav-left">
@@ -40,7 +42,32 @@ export default function NavBar() {
                     </div>
                 </div>
             </div>
-            
+
+
+            <div className={isOpen ? 'side open' : 'side'}>
+
+                <div className="sideTopLayer">
+                    <button className="sideBtn" onClick={() => setIsOpen(false)}>
+                        <i className="fa-solid fa-xmark"></i>
+                    </button>
+
+                    <div className="sideLinks">
+                        <Link onClick={() => setIsOpen(false)}>Notre Entreprise</Link>
+                        <Link onClick={() => setIsOpen(false)}>Notre Science</Link>
+                        <Link onClick={() => setIsOpen(false)}>Votre Santé</Link>
+                        <Link onClick={() => setIsOpen(false)}>Partenariat</Link>
+                        <Link onClick={() => setIsOpen(false)}>Investisseurs</Link>
+                        <Link onClick={() => setIsOpen(false)}>Carrières</Link>
+                        <Link onClick={() => setIsOpen(false)}>Partenariat Paris 2024</Link>
+                    </div>
+                </div>
+                <button className="sideButtonLayer" onClick={() => setIsOpen(false)}></button>
+
+
+
+
+            </div>
+
         </nav>
     )
 }
