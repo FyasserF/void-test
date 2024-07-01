@@ -1,11 +1,22 @@
 .main {
     width: 80%;
     background-color: white;
-    /* height: 1000px; */
     margin: 40px auto;
     padding: 40px 0;
     display: flex;
     flex-direction: column;
     gap: 100px;
     border-radius: 8px;
+}
+
+@media (max-width: 1400px) {
+    .main {
+        width: 90%;
+    }
+}
+
+@media (max-width: 400px) {
+    .main {
+        width: 100%;
+    }
 }
