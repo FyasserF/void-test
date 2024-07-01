@@ -33,3 +33,33 @@
         }
     }
 }
+
+
+@media (max-width: 1010px) {
+    .PreFooter {
+        width: 70%;
+    }
+}
+
+@media (max-width: 650px) {
+    .PreFooter {
+        width: 80%;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .PreFooter {
+        width: 90%;
+        gap: 10px;
+
+        h2 {
+            font-size: 24px;
+            line-height: 28px;
+        }
+        p{
+            margin: 20px 0;
+            font-size: 13px;
+        }
+    }
+}
