@@ -7,4 +7,5 @@
     display: flex;
     flex-direction: column;
     gap: 100px;
+    border-radius: 8px;
 }

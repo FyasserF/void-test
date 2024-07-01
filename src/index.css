@@ -6,12 +6,15 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Work Sans", sans-serif;
+    scroll-behavior: smooth;
     /* font-family: "Roboto Mono", monospace; */
 }
 
 :root {
     --main-color: #7A00E6;
 }
-body{
-    background-color:#f8f4f4;
+
+body {
+    background-color: #f8f4f4;
+
 }

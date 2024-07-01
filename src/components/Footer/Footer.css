@@ -1,0 +1,54 @@
+.Footer {
+    .top {
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 30px;
+        color: white;
+
+        .right {
+            display: flex;
+            align-items: center;
+            gap: 80px;
+
+            .links {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                i {
+                    border: 1px solid white;
+                    height: 40px;
+                    width: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    transition: .4s;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: white;
+                        color: black;
+                    }
+                }
+            }
+
+            .hautPage {
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 13px;
+                    font-weight: 400;
+
+                    i {
+                        margin-left: 15px;
+                    }
+                }
+
+            }
+        }
+
+    }
+}

@@ -40,53 +40,7 @@ export default function SectionOne() {
                     </div>
                 </div>
             ))}
-
-
-
-            {/* <div className="sectionOne-p2">
-                <div className="img">
-                    <div className="icon">
-                        <i className="fa-solid fa-play"></i>
-                    </div>
-                    <img src={img2} alt="" />
-                </div>
-
-                <div className="text">
-                    <h2>
-                        Les femmes au sein de Entreprise - Cristina
-                    </h2>
-                    <p>
-                        Rencontrez Cristina Zamora, notre cheffe de projet pour les
-                        opérations de R&D en Amérique du Nord et l'une des
-                        nombreuses scientifiques inspirantes qui contribuent à
-                        renforcer la prochaine génération de femmes leaders dans le<br />
-                        domaine de la santé et au-delà.
-                    </p>
-                    <button>En savoir plus <i className="fa-solid fa-arrow-up-right-from-square"></i></button>
-                </div>
-            </div>
-
-            <div className="sectionOne-p3">
-                <div className="text">
-                    <h2>
-                        200 jours avant les Jeux
-                        Paralympiques
-                    </h2>
-                    <p>
-                        Si vous n'avez pas encore entendu parler du
-                        #DrapeauMéningites, regardez la vidéo de Vaskange et
-                        découvrez la signification de chaque couleur.
-                    </p>
-                    <button>En savoir plus <i className="fa-solid fa-arrow-up-right-from-square"></i></button>
-                </div>
-
-                <div className="img">
-                    <div className="icon">
-                        <i className="fa-solid fa-play"></i>
-                    </div>
-                    <img src={img3} alt="" />
-                </div>
-            </div> */}
+            
         </div>
 
     )
