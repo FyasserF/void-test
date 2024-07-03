@@ -183,16 +183,24 @@
             position: absolute;
             width: 100%;
             height: 100%;
-            background-color: transparent;
+            background-color: rgba(0, 0, 0, 0.363);
             z-index: 9;
+            opacity: 0;
+            top: -200%;
+            left: 100%;
         }
-
-
-
     }
 
     .side.open {
         left: 0;
+
+        .sideButtonLayer {
+            background-color: rgba(0, 0, 0, 0.363);
+            opacity: 1;
+            top: 0;
+            left: 0;
+            transition-delay: .3s;
+        }
     }
 }
 
